@@ -1,16 +1,16 @@
 def prime_number():
-    number = input("Enter a positif number please: ")
-    while int(number) > 0 :
-        for i in range(2,10):
-            if int(number) % i != 0:
-                return f"entered number is prime number"
+    x=input("enter a positif number")
+    if x.isdigit():
+        for i in range(2,int(x)):
+            if int(x)%i==0:
+                print(f"{x} is not a prime number")
+                break
+            else:
+                print(f"{x} is a prime number")
+                break
+    else:
+        print("Please enter a positif number")
 
-print(prime_number())
+prime_number()
 
 
-
-
-
-
-
-# print(f"entered negatif number or zero number please try again")
